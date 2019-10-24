@@ -29,8 +29,22 @@ function draw(a) {
       
     };
   };
-  let imgData1 = [];
-  let imgData2 = [];
+
+
+function drawImage(pic) {
+    let canvas = document.querySelector('.canvas');
+    if (canvas.getContext) {
+        let ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, 512, 512);
+        ctx.drawImage(pic,0,0, 512, 512);
+    };
+};
+
+
+let imgData1 = [];
+let imgData2 = [];
+let pic = new Image();
+pic.src = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/image.png';
 
 
 fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/4x4.json')
@@ -40,11 +54,12 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
   .then(res => res.json())
   .then(data => imgData2 = data)
 
-
-
 document.getElementById('img4').addEventListener('click', () => { 
     draw(imgData1);
 });
 document.getElementById('img32').addEventListener('click', () => { 
     draw(imgData2);
+});
+document.getElementById('img256').addEventListener('click', () => { 
+    drawImage(pic);
 });
