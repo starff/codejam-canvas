@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Medium.ttf);
+   }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+.header {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.header--nav {
+    height: 40px;
+    width: 40px;
+}
+.header--name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    width: 1300px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.header--menu {
+    height: 24px;
+    width: 12px;
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.equipment {
+    display: flex;
+    flex-direction: column;
+}
+
+.paint_move {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    height: 246px;
+    width: 228px;
+}
+
+
+.paint_move--item {
+    width: 228px;
+    height: 62px;
+}
+.paint_move--icon {
+    display: inline-block;
+}
+.paint_move--name {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.color {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    height: 246px;
+    width: 228px;
+}
+.color--item {
+    width: 228px;
+    height: 62px;
+}
+.color--icon {
+    display: inline-block;
+}
+.color--name {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+
+
+.pixel {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    height: 186px;
+    width: 228px;
+}
+.pixel--item {
+    width: 228px;
+    height: 62px;
+}
+.pixel--icon {
+    display: inline-block;
+}
+.pixel--name {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+.footer {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}

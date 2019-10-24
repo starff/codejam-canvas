@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css'>
     <title>codejam-canvas</title>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -13,17 +15,95 @@
             <h1 class="header--name">CodeJam - Pallete</h1>
             <img class="header--menu" src="./assets/images/menu icon.png" alt="menu">
         </header>
-        <main>
+        <main class="main">
             <div class="equipment">
-                <div class="paint"></div>
-                <div class="color"></div>
+                <div class="paint_move">
+                    <table>
+                        <tr>
+                            <td class="paint_move--item">
+                                <img class="paint_move--icon" src="./assets/images/fill-drip.png" alt="fill-drip">
+                                <span class="paint_move--name">Paint bucket</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paint_move--item">
+                                <img class="paint_move--icon" src="./assets/images/eye-dropper.png" alt="eye-dropper">
+                                <span class="paint_move--name">Choose color</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paint_move--item">
+                                <img class="paint_move--icon" src="./assets/images/arrows-alt.png" alt="arrows-alt">
+                                <span class="paint_move--name">Move</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paint_move--item">
+                                <img class="paint_move--icon" src="./assets/images/exchange-alt.png" alt="exchange-alt">
+                                <span class="paint_move--name">Transform</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="color">
+                    <table>
+                        <tr>
+                            <td class="color--item">
+                                <img class="color--icon" src="./assets/images/Ellipse.png" alt="Ellipse">
+                                <span class="color--name">Current color</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="color--item">
+                                <img class="color--icon" src="./assets/images/Ellipse1.png" alt="Ellipse1">
+                                <span class="color--name">Prev color</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="color--item">
+                                <img class="color--icon" src="./assets/images/Ellipse2.png" alt="Ellipse2">
+                                <span class="color--name">red</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="color--item">
+                                <img class="color--icon" src="./assets/images/Ellipse3.png" alt="Ellipse3">
+                                <span class="color--name">blue</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="field">
                 <canvas></canvas>
             </div>
             <div class="pixel">
+                <table>
+                        <tr>
+                            <td class="pixel--item">
+                                <img class="pixel--icon" src="./assets/images/image.png" alt="Image">
+                                <span class="pixel--name">4x4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pixel--item">
+                                <img class="pixel--icon" src="./assets/images/image.png" alt="Image">
+                                <span class="pixel--name">32x32</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pixel--item">
+                                <img class="pixel--icon" src="./assets/images/image.png" alt="Image">
+                                <span class="pixel--name">256x256</span>
+                            </td>
+                        </tr>
+                    </table>
             </div>
         </main>
+        <footer class="footer">
+            <h2>Designed by Starff</h2>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
