@@ -34,6 +34,7 @@
     color: rgba(0, 0, 0, 0.87);
 }
 .header--menu {
+    margin-right: 10px;
     height: 24px;
     width: 12px;
 }
@@ -41,15 +42,18 @@
 
 
 .main {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 .equipment {
+    
     display: flex;
     flex-direction: column;
 }
 
 .paint_move {
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
     height: 246px;
@@ -75,6 +79,8 @@
 }
 
 .color {
+    margin-top: 30px;
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
     height: 246px;
@@ -105,32 +111,73 @@
 
 
 .pixel {
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
     height: 186px;
     width: 228px;
 }
 .pixel--item {
+    cursor: pointer;
     width: 228px;
     height: 62px;
 }
 .pixel--icon {
     display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 .pixel--name {
+    margin-left: 5px;
     display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 36px;
     color: rgba(0, 0, 0, 0.541327);
 }
 .footer {
+    margin-top: 50px;
     height: 48px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: rgba(0, 0, 0, 0.541327);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+
+.pixel--item:hover {
+    background: lightcyan;
+}
+.pixel--item:active {
+    background: aqua;
+}
+@media (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+
+    }
+}
+@media (max-width: 1048px) {
+    .equipment {
+        display: none;
+    }
+}
+@media (max-width: 780px) {
+    .main {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 512px) {
+    .canvas {
+        width: 100%;
+    }
+    .main { 
+        margin-top: 0;
+    }
 }
